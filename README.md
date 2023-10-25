@@ -95,3 +95,4 @@
 
 Alguns dos sites pedem verificação de e-mail ou de telefone, o mercado livre é o único que pede RG a reconhecimento facial, ocupação e é o único se perguntar se o cliente é uma pessoa pública, a Shein não pede senha.
 
+ola
