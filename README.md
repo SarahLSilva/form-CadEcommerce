@@ -20,7 +20,7 @@
 
 # Metodos
 
- Foi utilizado sites de E-commerce como exemplo para se ter alguma base de como é um cadastro real, tento noção do que normalmente pedem ou deixam de pedir no momento de criar um conta e quando vai comprar algo. E então anotamos todo o passo a passo dos diferentes cadastros.
+ Foi utilizado sites E-commerce como exemplo para se ter alguma base de como é um cadastro real, tento noção do que normalmente pedem ou deixam de pedir no momento de criar um conta e quando vai comprar algo. E então anotamos todo o passo a passo dos diferentes cadastros.
 
 # Sites utilizados
 
