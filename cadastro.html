@@ -1,50 +1,146 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Cadastro</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-    <form class="row gy-2 gx-3 align-items-center">
-        <div class="col-auto">
-          <label class="visually-hidden" for="autoSizingInput">Nome</label>
-          <input type="text" class="form-control" id="Nome" placeholder="Jane Doe">
-        </div>
+  <style>
+    body {
+      width: 100%;
+      height: 1000px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background: linear-gradient(-45deg, #f08d88, #e8e8bd, #fffeff);
+    }
 
-        <div class="col-auto">
-          <label class="visually-hidden" for="autoSizingInputGroup">Nome de usuario</label>
-          <div class="input-group">
-            <div class="input-group-text">@</div>
-            <input type="text" class="form-control" id="NomeDeUsuario" placeholder="Username">
-          </div>
-        </div>
+    h1 {
+      margin-bottom: 10%;
+      font-size: 1.8em;
+    }
 
-        <div class="col-auto">
-          <label class="visually-hidden" for="autoSizingSelect">Gênero</label>
-          <select class="form-select" id="autoSizingSelect">
-            <option selected>Gênero</option>
-            <option value="1">Femino</option>
-            <option value="2">Masculino</option>
-            <option value="3">Outro</option>
-            <option value="4">Prefiro não informar</option>
-          </select>
-        </div>
-        
-        <div class="col-auto">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-            <label class="form-check-label" for="autoSizingCheck">
-              Me lembre
-            </label>
-          </div>
-        </div>
+    textarea {
+      height: 120px;
+      border-radius: 10px;
+      width: 290px;
+      background-color: rgb(69, 69, 69);
+    }
 
-        <div class="col-auto">
-          <button type="submit" class="btn btn-primary">Entrar</button>
+
+    form {
+      background-color: rgb(255, 255, 255);
+      max-width: 70%;
+      margin: 0 auto;
+      padding: 49px;
+      border-radius: 90px;
+      box-shadow: 0 0 10px rgba(210, 155, 155, 0.682);
+      
+    }
+
+    input {
+      width: 290px;
+      height: 38px;
+      border-radius: 20px;
+      background-color: rgb(214, 129, 129);
+    }
+
+    span {
+      font-size: 14px;
+
+    }
+
+    p {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 25px;
+      color: rgb(0, 0, 0);
+    }
+    h1 {
+      color:rgb(255, 249, 249);
+    }
+  </style>
+  <div class="container">
+    <h1>Cadastro</h1>
+    <form class="row gy-2 gx-3 align-items-center" id="form">
+      <div class="col-auto">
+        <label class="fotm-label" for="autoSizingInput">Nome</label>
+        <input type="text" class="form-control" id="Nome" placeholder="Seu nome">
+      </div>
+      <div class="col-auto">
+        <label class="fotm-label" for="autoSizingInput">Data de nacimento</label>
+        <input type="text" class="form-control" id="Nome" placeholder="00/00/0000">
+      </div>
+      <div class="col-auto">
+        <label class="fotm-label" for="autoSizingInput">Telefone</label>
+        <input type="text" class="form-control" id="Nome" placeholder="(+55) 90000-0000">
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">CPF</label>
+        <input type="text" class="form-control" id="CPF" placeholder="000.000.000-00">
+      </div>
+      <div class="col-auto">
+        <label class="fotm-label" for="autoSizingInputGroup">Nome de usuario</label>
+        <div class="input-group">
+          <div class="input-group-text">@</div>
+          <input type="text" class="form-control" id="NomeDeUsuario" placeholder="seu usuario">
         </div>
-      </form>
+      </div>
+
+      <div class="col-auto">
+        <label class="fotm-label" for="autoSizingSelect">Gênero</label>
+        <select class="form-select" id="Gênero" placeholder="Selecione seu gênero">
+          <option value="1"></option>
+          <option value="1">Femino</option>
+          <option value="2">Masculino</option>
+          <option value="3">Outro</option>
+          <option value="4">Prefiro não informar</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="Email" placeholder="Digite seu e-mail">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="Senha" placeholder="Digite sua senha">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">CEP</label>
+        <input type="text" class="form-control" id="Cidade" placeholder="Digite seu CEP">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">País</label>
+        <input type="text" class="form-control" id="País" placeholder="Digite seu país">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">Estado</label>
+        <input id="Estado" class="form-control" placeholder="Digite seu estado">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Cidade</label>
+        <input type="text" class="form-control" id="Cidade" placeholder="Digite sua cidade">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Bairro</label>
+        <input type="text" class="form-control" id="Bairro" placeholder="Digite seu bairro">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Rua</label>
+        <input type="text" class="form-control" id="Rua" placeholder="Digite sua rua">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Número da casa</label>
+        <input type="text" class="form-control" id="casa" placeholder="Digite sua casa">
+      </div>
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-primary">Entrar</button>
+      </div>
+    </form>
+  </div>
 </body>
+
 </html>
